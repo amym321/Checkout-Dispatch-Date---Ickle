@@ -14,7 +14,6 @@ export function Shipping() {
   const attributes = useAttributes();
   let dispatched = "";
   if (attributes && attributes.length > 0) {
-    console.log("Attribute 3:", attributes);
     //get attribute preOrderDate
     const filteredAttributes = attributes.filter(
       (item) => item.key === "preOrderDate:"

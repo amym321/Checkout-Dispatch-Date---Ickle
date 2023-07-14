@@ -34,7 +34,6 @@ function App() {
   const attributes = useAttributes();
   let dispatched = "";
   if (attributes && attributes.length > 0) {
-    console.log("Attribute 1:", attributes);
     //get attribute preOrderDate
     const filteredAttributes = attributes.filter(
       (item) => item.key === "preOrderDate:"

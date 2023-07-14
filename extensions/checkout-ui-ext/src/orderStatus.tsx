@@ -11,10 +11,8 @@ export function OrderStatus() {
   const { extensionPoint } = useExtensionApi();
   const translate = useTranslate();
   const attributes = useAttributes();
-  console.log("attributes: ", attributes);
   let dispatched = "";
   if (attributes && attributes.length > 0) {
-    console.log("Attribute 2:", attributes);
     //get attribute preOrderDate
     const filteredAttributes = attributes.filter(
       (item) => item.key === "preOrderDate:"

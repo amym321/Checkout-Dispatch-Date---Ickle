@@ -13,7 +13,6 @@ export function Thankyou() {
   const attributes = useAttributes();
   let dispatched = "";
   if (attributes && attributes.length > 0) {
-    console.log("Attribute 4:", attributes);
     //get attribute preOrderDate
     const filteredAttributes = attributes.filter(
       (item) => item.key === "preOrderDate:"
@@ -35,7 +34,6 @@ export function Thankyou() {
     let mm = month < 10 ? "0" + month : month;
     date = `${dd}/${mm}`;
   }
-  console.log("Attribute 4:", attributes);
   const dateDispatchedText = date ? `Order to be dispatched by ${date}` : "";
   return (
     <BlockStack inlineAlignment="start">
