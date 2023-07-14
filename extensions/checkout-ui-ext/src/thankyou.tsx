@@ -13,6 +13,7 @@ export function Thankyou() {
   const attributes = useAttributes();
   let dispatched = "";
   if (attributes && attributes.length > 0) {
+    console.log("Attribute 4:", attributes);
     attributes.sort((a, b) => {
       if (a.value < b.value) return 1;
       if (a.value > b.value) return -1;

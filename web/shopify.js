@@ -18,7 +18,6 @@ const billingConfig = {
   },
 };
 const hots1 = process.env.HOST;
-console.log("api key:", hots1);
 const shopify = shopifyApp({
   api: {
     apiVersion: LATEST_API_VERSION,
@@ -40,5 +39,4 @@ const shopify = shopifyApp({
   sessionStorage: new SQLiteSessionStorage(DB_PATH),
 });
 
-console.log("spf:::", shopify);
 export default shopify;
