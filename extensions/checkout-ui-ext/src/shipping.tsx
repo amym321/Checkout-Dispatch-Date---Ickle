@@ -15,12 +15,16 @@ export function Shipping() {
   let dispatched = "";
   if (attributes && attributes.length > 0) {
     console.log("Attribute 3:", attributes);
-    attributes.sort((a, b) => {
+    //get attribute preOrderDate
+    const filteredAttributes = attributes.filter(
+      (item) => item.key === "preOrderDate:"
+    );
+    filteredAttributes.sort((a, b) => {
       if (a.value < b.value) return 1;
       if (a.value > b.value) return -1;
       return 0;
     });
-    dispatched = attributes[0].value;
+    dispatched = filteredAttributes[0].value;
   }
   // convert Date DD/MM
   let date = "";
