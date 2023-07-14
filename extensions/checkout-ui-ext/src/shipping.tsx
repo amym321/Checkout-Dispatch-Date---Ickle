@@ -32,6 +32,7 @@ export function Shipping() {
     let mm = month < 10 ? "0" + month : month;
     date = `${dd}/${mm}`;
   }
+  console.log("Attribute 3:", attributes);
   const dateDispatchedText = date ? `Order to be dispatched by ${date}` : "";
   return (
     <BlockStack inlineAlignment="start">

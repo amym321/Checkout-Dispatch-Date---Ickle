@@ -52,7 +52,8 @@ function App() {
     let mm = month < 10 ? "0" + month : month;
     date = `${dd}/${mm}`;
   }
-  const dateDispatchedText = date ? `Order to be dispatched by ${date}` : "";
+  console.log("Attribute 1:", attributes);
+  const dateDispatchedText = date ? `Order to be dispatched by ${date}.` : "";
   return (
     <BlockStack inlineAlignment="start">
       <Text size="base" emphasis="bold">

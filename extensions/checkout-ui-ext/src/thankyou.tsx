@@ -31,6 +31,7 @@ export function Thankyou() {
     let mm = month < 10 ? "0" + month : month;
     date = `${dd}/${mm}`;
   }
+  console.log("Attribute 4:", attributes);
   const dateDispatchedText = date ? `Order to be dispatched by ${date}` : "";
   return (
     <BlockStack inlineAlignment="start">
