@@ -59,7 +59,7 @@ function App() {
   const dateDispatchedText = date ? `Order to be dispatched by ${date}` : "";
   return (
     <BlockStack inlineAlignment="start">
-      <Text size="base" emphasis="bold" style={{color: "rgb(64, 71, 186)"}}>
+      <Text size="base" emphasis="bold" style={{color: "#4047BA"}}>
         {dateDispatchedText}
       </Text>
     </BlockStack>
