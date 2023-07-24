@@ -38,7 +38,7 @@ export function OrderStatus() {
   const dateDispatchedText = date ? `Order to be dispatched by ${date}` : "";
   return (
     <BlockStack inlineAlignment="start">
-      <Text size="base" emphasis="bold">
+      <Text size="base" emphasis="bold" style={{color: "#4047B"}}>
         {dateDispatchedText}
       </Text>
     </BlockStack>
