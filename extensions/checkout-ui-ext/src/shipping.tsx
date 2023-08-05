@@ -36,9 +36,7 @@ export function Shipping() {
 		date = `${dd}/${mm}`;
 	}
 	console.log('Attribute 3:', attributes);
-	const dateDispatchedText = date
-		? `Die Bestellung wird bis zum ${date} versandt`
-		: '';
+	const dateDispatchedText = date ? `Order to be dispatched by ${date}` : '';
 	return (
 		<BlockStack inlineAlignment="start">
 			<Text

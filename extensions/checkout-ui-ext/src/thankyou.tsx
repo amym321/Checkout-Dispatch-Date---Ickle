@@ -34,9 +34,7 @@ export function Thankyou() {
 		let mm = month < 10 ? '0' + month : month;
 		date = `${dd}/${mm}`;
 	}
-	const dateDispatchedText = date
-		? `Die Bestellung wird bis zum ${date} versandt`
-		: '';
+	const dateDispatchedText = date ? `Order to be dispatched by ${date}` : '';
 	return (
 		<BlockStack inlineAlignment="start">
 			<Text
