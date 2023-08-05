@@ -1,3 +1,4 @@
 {
-  "welcome": "Welcome to the {{extensionPoint}} extension!"
+  "welcome": "Welcome to the {{extensionPoint}} extension!",
+  "dateDispatchedText": "Order to be dispatched by {{date}}"
 }

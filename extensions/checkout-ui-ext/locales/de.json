@@ -1,0 +1,4 @@
+{
+    "welcome": "Willkommen zur {{extensionPoint}}-Erweiterung!",
+    "dateDispatchedText":"Die Bestellung wird bis zum {{date}} versandt "
+  }
